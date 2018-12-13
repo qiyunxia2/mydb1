@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<style type="text/css">
+	body{
+		width:100%;
+		position:relative;
+	}
+	.container{
+			width:100%;
+			height:auto;
+			margin:0 auto;
+		}
+	.container .pro-left{
+			width:810px;
+			float:left;
+			position:relative;
+			overflow:hidden;
+		}
+	 .container.p-l-pic	{
+		position: relative;
+    	overflow: hidden;
+    	margin-bottom: 110px;
+	}
+	.container .item-info{
+		width: 810px;
+    	height: 670px;
+    	float: left;
+	}
+	.container .item-list{
+		position: relative;
+    	float: left;
+    	padding: 25px 0;
+    	width: 100px;
+    	height: 680px;
+	}
+	.prev{
+		display: none;
+	    text-align: center;
+	    width: 100px;
+	    height: 10px;
+	    line-height: 10px;
+	    border: 1px solid #CCC;
+	    background: #EBEBEB;
+	    cursor: pointer;
+	    text-decoration: none;
+	}
+	.item-ul{
+		position: relative;
+	    height: 605px;
+	    width: 100px;
+	    overflow: hidden;
+	    margin: 32px 0;
+	} 
+	.tb-thumb{
+		position: absolute;
+	    width: 100px;
+	    height: auto;
+	    overflow: hidden;
+	    list-style:none;
+	}
+	.tb-selected{
+		width: 90px;
+	    height: 120px;
+	    line-height: 110px;
+	    padding: 0 5px;
+	    overflow: hidden;
+	}
+	.tb-pic .tb-s40{
+		height: 104px;
+   		margin: 10px 0;}
+	.container .pro-right{
+			width:200px;
+			height:20px;
+			float:left;
+		}
+	
+
+	</style>
+</head>
+<body>
+	<!-- content -->
+	<div class="container">
+    <div class="postion">
+        <a href="index.html">首页</a>
+        <i>/</i>
+        <a href="girl.html">女孩</a>
+        <i>/</i>
+        <a href="index.html">连衣裙</a>
+        <i>/</i>
+        <a href="shoping.html">长袖蓬蓬蕾丝连衣裙藏蓝色</a>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="container">
+    <div class="pro-left">
+        <div class="p-l-pic">
+              <div class="item-info">          
+                  <div class="item-list">
+                  <a class="prev">&lt;</a>
+                  <div class="item-ul">
+                      <ul class="tb-thumb" id="thumblist">
+                                                      <li class="tb-selected">
+                                                      	<div class="tb-pic tb-s40">
+                                                      		<a href="">
+                                                      		<img src="img/small1.jpg" width="70px" height="84px">
+                                                      	</a>
+                                                      </div>
+                                                  </li>
+                                                      <li>
+                                                      	<div class="tb-pic tb-s40">
+                                                      		<a href="">
+                                                      			<img src="img/s1.jpg" width="70px" height="84px">
+                                                      		</a>
+                                                      	</div>
+                                                      </li>
+                                                      <li>
+                                                      	<div class="tb-pic tb-s40">
+                                                      		<a href="">
+                                                      			<img src="img/small3.jpg" width="70px" height="84px">
+                                                      		</a>
+                                                      	</div>
+                                                      </li>
+                                                      <li>
+                                                      	<div class="tb-pic tb-s40">
+                                                      		<a href="javascript:;">
+                                                      			<img src="img/small4.jpg" mwidth="70px" height="84px">
+                                                      		</a>
+                                                      	</div>
+                                                      </li>
+                                                      <li>
+                                                      	<div class="tb-pic tb-s40">
+                                                      		<a href="javascript:;">
+                                                      			<img src="img/small5.jpg" width="70px" height="84px">
+                                                      		</a>
+                                                      	</div>
+                                                      </li>
+                                                </ul>
+                  </div>
+                   <a class="next">&gt;</a>
+                   </div>
+                  <div class="tb-booth tb-pic">
+                      <a href="javascript:;">
+                      	<img src="img/big1.jpg" alt="" width="450px" height="540px" class="jqzoom" style="cursor: crosshair;">
+                      </a>
+                  </div>
+            </div>
+            <!--产品参数结束-->
+        </div>
+        <div class="p-l-tuijian">
+            <div class="tj-h3">更多推荐</div>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="pro-right">
+
+        <div class="item-name"><h1>ANGEL'S FACE</h1><h2>长袖蓬蓬蕾丝连衣裙藏蓝色</h2></div>
+                            <div class="summary">¥<span id="spec_price">790.00</span></div>
+        
+                    <div class="activity_info">
+                订单：满1件享受-15%的优惠                <div class="activity_info_more active" id="more">
+                    <p style="text-indent: 3em;">满1件享受-15%的优惠</p><p style="text-indent: 3em;">满2件享受-25%的优惠</p>                </div>
+
+                                <div id="check" class="activity_info_check" onclick="checkActivity()">查看活动详情</div>
+                            </div>
+        
+        <div class="choose p28">
+                        <div class="choose-color">
+                <h3>颜色:</h3>
+                <ul class="p28 specs_color">
+                                        <li><img src="/Public/System/img/specImg/56cc322ebe9c9.jpg" title="藏蓝色" alt="藏蓝色" onclick="btnColSpec(this)" data-specsid="109" class="valid"></li>
+                                    </ul>
+            </div>
+                        <div class="clear"></div>
+            <div class="choose-num p28">
+                <h3>数量:</h3>
+                <div class="nice-select" name="nice-select">
+                    <input type="text" class="specs_num_one" value="" disabled="disabled">
+                                            <ul class="specs_num" style="display: none;"><li data-value="1" onclick="changeNum(this)">1</li></ul>            
+                </div>
+            </div>
+            <div class="choose-size p28">
+                <h3>尺码:</h3>
+                <div class="nice-select" name="nice-select">
+                    <input type="text" class="specs_size_one" value="" readonly="">
+                    <ul class="specs_size" style="display: none;"><li data-value="109,87" onclick="changeSize(this)">2-3Y</li><li data-value="109,88" onclick="changeSize(this)">3-4Y</li><li data-value="109,89" onclick="changeSize(this)">4-5Y</li><li data-value="109,91" onclick="changeSize(this)">6-7Y</li></ul>            
+                </div>
+            </div>
+        </div>
+        <div id="fade" class="black_over">
+        </div>
+        <!--弹出层的内容-->
+         
+        <div id="MyDiv" class="white_content">
+            <div class="bar_content">
+                <img src="/Public/Index2/images/bag.png" alt="" id="showcont">
+                <p class="txt_1">仅供线下北京门店销售</p>
+                <p class="txt_2" id="text_2" style="color: #9B9B9B;">北京朝阳区建外街道建国门外大街银泰中心商城L319</p>
+            </div>
+            <img id="gb" src="/Public/Index2/images/close.png">
+        </div>
+
+        <div class="clear"></div>
+        <div class="clear"></div>
+        <div class="btn-addorder p28">
+        	           		<a href="javascript:;" onclick="buyNow();">立即购买</a>        </div>
+        <div class="clear"></div>
+        <div class="chima p28">
+            <!-- goods_id 商品ID -->
+            <input type="hidden" id="goods_id" value="4727">
+            <!-- 加入收藏的url -->
+            <input type="hidden" id="collectActionUrl" value="/index/ucenter-addcollect.html">
+            <span><a href="/Index/Index-aboutus-aboutus_categorys_id-37.html">尺码手册</a></span>
+                            <i class="heart" onclick="addCollect()"></i>
+                        <font>添加到愿望清单</font>
+        </div>
+        <div class="tankai">
+            <div class="tk-tit p28"><span>商品详情</span><i>+</i></div>
+            <div class="tk-cont">
+                <div style="font-size:12px;padding:20px;">
+	<div style="color:#9B9B9B;">
+		<p style="color:black;font-weight:bolder;">
+			身体 - 50％棉50％莫代尔<br>
+<br>
+裙子 - 100％涤纶<br>
+<br>
+可机洗30 * c
+		</p>
+	</div>
+	<div style="color:#9B9B9B;">
+		<p style="color:black;font-weight:bolder;">
+			<br>
+		</p>
+	</div>
+</div>            </div>
+        </div>
+        <div class="tankai">
+            <div class="tk-tit p28"><span>邮寄费用及退换货费用</span><i>+</i></div>
+            <div class="tk-cont">
+                             </div>
+        </div>
+        <div class="tankai">
+            <div class="tk-tit p28"><span><a href="http://v2.live800.com/live800/chatClient/chatbox.jsp?companyID=575146&amp;configID=125487&amp;jid=3781570273">联系我们</a></span><i>+</i></div>
+        </div>
+        <div id="share" class="p28">
+            <div class="bdsharebuttonbox bdshare-button-style0-24" data-tag="share_1" data-bd-bind="1544661447802">
+                <span>分享到</span>
+                <a class="bds_weixin" data-cmd="weixin" href="#" title="分享到微信"></a>
+                <a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+                <a class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+                <a class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

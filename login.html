@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物流程</title>
+	<style type="text/css">
+		/*top部分*/
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	color:black;
+	text-decoration: none;
+}
+ul li{
+	list-style:none;
+}
+body{
+	width:100%;
+}
+/*header部分*/
+.top{
+	width:100%;
+	height:14px;
+	margin-top:20px;
+	position:relative;
+	margin-bottom:30px;
+}
+.top .top-left{
+
+	float: left;
+	margin-left: 120px;
+}
+.top .top-right{
+	float: right;
+	height: 14px;
+	width:300px;
+}
+.top .top-right a:nth-child(1){
+
+	height: 14px;
+	margin-right:30px;
+}
+.top .top-right .top-right1{
+	width: 150px;
+	height: 40px;
+	border: 1px solid gray;
+	padding:20px;
+	text-align: center;
+	z-index: 19;
+	display:none;
+	position: absolute;
+	right: -50px;
+	top:18px;
+	border-radius:5px;
+}
+.top .top-right-firstA{
+	position: relative;
+	margin-right:50px;
+}
+.top-right1 span:nth-child(1){
+	width: 60px;
+	height: 5px;
+	border-bottom:1px solid gray;
+	background:pink;
+}
+.top-right1 span:nth-child(2){
+	display:block;
+	text-align:center;
+	line-height:30px;
+	width: 150px;
+	height: 30px;
+	background: gray;
+	color: white;
+	border-radius:3px;
+}
+.top-right a:hover .top-right1{
+	display: block;
+}
+.top-right2{
+	display: none;
+	z-index: 20;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.login{
+		width:280px;
+		height:420px;
+		border:1px solid gray;
+		margin-left:10px;
+		z-index:8;
+	}
+	.login h4{
+		text-align:center;
+	}
+	.login a{
+		display:block;
+		color:black;
+		text-decoration: none;
+		font-size:14px;
+	}
+	.login .login-L a{
+		display:block;
+		width:235px;
+		height:40px;
+		text-align:center;
+		border:1px solid gray;
+		background:black;
+		color:white;
+		line-height:40px;
+		margin-top:18px;
+		margin-bottom:18px;
+	}
+	.login .login-Z a{
+		font-size:14px;
+		color:#333333;
+	}
+	.login .login-C a{
+		display:block;
+		width:235px;
+		height:40px;
+		text-align:center;
+		border:1px solid gray;
+		background:white;
+		color:black;
+		line-height:40px;
+		margin-top:18px;
+		margin-bottom:18px;
+
+	}
+	.login img{
+		margin:0 auto;
+	}
+	.header{
+	width:100%;
+	overflow: hidden;
+}
+
+.header1{
+	/*width: 100%;*/
+	height:46px;
+	margin-left:90px;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+.header1 a{
+	display:inline-block;
+	width:209px;
+	height:46px;
+	margin-left:600px;
+	float: left;
+}
+.header2 {
+	
+	height:30px;
+	/*position:fixed;*/
+	margin-left:82px;
+}
+.header2 a{
+			display:inline-block;
+			width:80px;
+			height:30px;
+			float:left;
+			position:relative;
+			margin-left:52px;
+			position:relative;
+	}
+.header2 a:hover{
+	text-decoration:underline ;
+}
+.hear{
+	width:1200px;
+	height:440px;
+	position:absolute;
+	left:120px;
+	top:210px;
+	border:1px solid black;
+	z-index: 3;
+	background: white;
+	display: none;
+
+}
+.header .hear ul{
+	float:left;
+}
+.header .hear li{
+	list-style: none;
+	margin-right:40px;
+	display: block;
+	font-size:12px;
+	color:black;
+	line-height: 24px;
+	margin-left:50px;
+}
+.hear li img{
+	display: block;
+	width:400px;
+	height:400px;
+}
+.hear li h3{
+	font-size: 12px;
+	line-height: 24px;
+	color:black;
+}
+		/*content部分*/
+		.content{
+			width:100%;
+			margin-left:120px;
+		}
+		.content .ul1{
+			width:1200px;
+			height:200px;
+		}
+		.content li{
+		float:left;
+		text-align:center;
+		margin:10px;
+		}
+		.content li a{
+			font-size:16px;
+		}
+	.content  .ul1 li:nth-child(2n+1){
+		width:120px;
+		height:20px;
+		border-bottom:1px solid gray;
+	}	
+	.content .ul1 li:nth-child(2n){
+		width:35px;
+		height:35px;
+		background:gray;
+		color:black;
+		border-radius:50%;
+	}
+	.content .ul1 li:nth-child(3){
+		width:150px;
+	}
+	.content .ul1 li:nth-child(5){
+		width:150px;
+	}
+	.content .ul1 li:nth-child(7){
+		width:150px;
+	}
+	.content2{
+		margin-left:120px;
+	}
+	.content2 h4{
+		width:100px;
+	}
+	.content2 .wu{
+		font-size:12px;
+		width:100px;
+		height:60px;
+		line-height:60px;
+	}
+	.content2 .goshoping a{
+		display:block;
+		width:180px;
+		height:60px;
+		text-align:center;
+		background:black;
+		color:white;
+		line-height:60px;
+	}
+	/*foot部分*/
+.foot{
+	width:100%;
+	height:550px;
+	text-align:center;
+	margin-top:60px;
+	margin-bottom:20px;
+	background:#eeeeee;
+}
+.foot #span1{
+	display:inline-block;
+	font-size:16px;
+	color:#333333;
+	margin-top:70px;
+}
+.foot a{
+	width:80px;
+	height:80px;
+	text-decoration: none;
+}
+.foot a img{
+	margin:30px;
+}
+.foot .foot1 img{
+	margin:40px;
+}
+.foot .foot2 a{
+	color:black;
+}
+.foot .span2{
+	display:inline-block;
+	margin:25px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+}
+	</style>
+</head>
+<body>
+<!---top部分- -->
+	<div class="top">
+		<div class="top-left">
+			<a href="#"><img src="img/top-search.png" alt="加载失败"></a>
+		</div>
+		<div class="top-right">
+				<a href="login.html" class="top-right-firstA">
+					<img src="img/top-cart.png" alt="加载失败">
+					<div class="top-right1">
+						<span></span>
+						<span>查看我的购物袋</span>
+					</div>
+				</a>
+				<a href="login2.html" class="top-right-secondA"><img src="img/top-member.png" alt="加载失败">
+					<div class="top-right2">
+						<h4>登录</h4>
+						<p>手机号码：</p><input type="text">
+						<p>密码；</p><input type="text">
+						<a href="">找回密码</a>
+						<a href="">登录</a>
+						<hr/>
+						<a href="">注册账号</a>
+					</div>
+				</a>
+		</div>
+	</div>
+	<div class="header">
+		<div class="header1">
+			<a href="#"><img src="img/logo.png" alt="加载失败"></a>
+		</div>
+		<div class="header2">
+			<a  class="aId" href="">婴幼儿</a>
+				<div class="hear">
+					<ul>
+						<li >
+							<h3>分类</h3>
+						</li>
+						<li>包巾/口水巾</li>
+						<li>帽子/鞋子/袜子</li>
+						<li>裤子</li>
+						<li>上衣</li>
+						<li>套装</li>
+						<li>连体衣</li>
+						<li>泳衣</li>
+					</ul>
+					<ul>
+						<li><h3>颜色</h3></li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+					</ul>
+					<ul>
+						
+						<li><h3>品牌</h3></li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>更多品牌</li>
+						<li>
+							<img src="img/h1.jpg"/>
+						</li>
+					</ul>
+				</div>
+			<a  class="aId" href="guirl.html">女孩</a>
+			<div class="hear two">
+				<ul>
+						<li >
+							<h3>分类</h3>
+						</li>
+						<li>包巾/口水巾</li>
+						<li>帽子/鞋子/袜子</li>
+						<li>裤子</li>
+						<li>上衣</li>
+						<li>套装</li>
+						<li>连体衣</li>
+						<li>泳衣</li>
+					</ul>
+					<ul>
+						<li><h3>颜色</h3></li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+					</ul>
+					<ul>
+						
+						<li><h3>品牌</h3></li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>更多品牌</li>
+						<li>
+							<img src="img/h2.jpg"/>
+						</li>
+					</ul>
+			</div>
+			<a  class="aId" href="">男孩</a>
+			<div class="hear two">
+				<ul>
+						<li >
+							<h3>分类</h3>
+						</li>
+						<li>包巾/口水巾</li>
+						<li>帽子/鞋子/袜子</li>
+						<li>裤子</li>
+						<li>上衣</li>
+						<li>套装</li>
+						<li>连体衣</li>
+						<li>泳衣</li>
+					</ul>
+					<ul>
+						<li><h3>颜色</h3></li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+					</ul>
+					<ul>
+						
+						<li><h3>品牌</h3></li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>更多品牌</li>
+						<li>
+							<img src="img/h3.jpg"/>
+						</li>
+					</ul>
+			</div>
+			<a  class="aId" href="">玩具</a>
+			<div class="hear two">
+				<ul>
+						<li >
+							<h3>分类</h3>
+						</li>
+						<li>包巾/口水巾</li>
+						<li>帽子/鞋子/袜子</li>
+						<li>裤子</li>
+						<li>上衣</li>
+						<li>套装</li>
+						<li>连体衣</li>
+						<li>泳衣</li>
+					</ul>
+					<ul>
+						<li><h3>颜色</h3></li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+					</ul>
+					<ul>
+						
+						<li><h3>品牌</h3></li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>更多品牌</li>
+					</ul>
+					<ul>
+						<li>
+							<img src="img/h4.jpg"/>
+						</li>
+					</ul>
+			</div>
+			<a  class="aId" href="">鞋履</a>
+			<div class="hear two">
+				<ul>
+						<li >
+							<h3>分类</h3>
+						</li>
+						<li>包巾/口水巾</li>
+						<li>帽子/鞋子/袜子</li>
+						<li>裤子</li>
+						<li>上衣</li>
+						<li>套装</li>
+						<li>连体衣</li>
+						<li>泳衣</li>
+					</ul>
+					<ul>
+						<li><h3>颜色</h3></li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+					</ul>
+					<ul>
+						
+						<li><h3>品牌</h3></li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>更多品牌</li>
+					</ul>
+					<ul>
+						<li>
+							<img src="img/h5.jpg"/>
+						</li>
+					</ul>
+			</div>
+			<a  class="aId" href="">配饰</a>
+			<div class="hear two">
+				<ul>
+						<li >
+							<h3>分类</h3>
+						</li>
+						<li>包巾/口水巾</li>
+						<li>帽子/鞋子/袜子</li>
+						<li>裤子</li>
+						<li>上衣</li>
+						<li>套装</li>
+						<li>连体衣</li>
+						<li>泳衣</li>
+					</ul>
+					<ul>
+						<li><h3>颜色</h3></li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+					</ul>
+					<ul>
+						
+						<li><h3>品牌</h3></li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>更多品牌</li>
+					</ul>
+					<ul>
+						<li>
+							<img src="img/h6.jpg"/>
+						</li>
+					</ul>
+			</div>
+			<a  class="aId" href="">品牌</a>
+			<div class="hear two">
+				<ul>
+						<li >
+							<h3>分类</h3>
+						</li>
+						<li>包巾/口水巾</li>
+						<li>帽子/鞋子/袜子</li>
+						<li>裤子</li>
+						<li>上衣</li>
+						<li>套装</li>
+						<li>连体衣</li>
+						<li>泳衣</li>
+					</ul>
+					<ul>
+						<li><h3>颜色</h3></li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+					</ul>
+					<ul>
+						
+						<li><h3>品牌</h3></li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>更多品牌</li>
+						<li>
+						</li>
+					</ul>
+			</div>
+			<a  class="aId" href="">SALE</a>
+			<div class="hear two">
+				<ul>
+						<li >
+							<h3>分类</h3>
+						</li>
+						<li>包巾/口水巾</li>
+						<li>帽子/鞋子/袜子</li>
+						<li>裤子</li>
+						<li>上衣</li>
+						<li>套装</li>
+						<li>连体衣</li>
+						<li>泳衣</li>
+					</ul>
+					<ul>
+						<li><h3>颜色</h3></li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+						<li>红色</li>
+						<li>蓝色</li>
+						<li>白色</li>
+					</ul>
+					<ul>
+						
+						<li><h3>品牌</h3></li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>FENDI</li>
+						<li>CARAMEL</li>
+						<li>更多品牌</li>
+						<li>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+	<!-- -content部分   -->
+	<div class="content">
+		<ul class="ul1">
+			<li></li>
+			<li style="position:relative;">
+				<a href="#">1</a>
+			</li>
+			<li></li>
+			<li><a href="#">2</a></li>
+			<li></li>
+			<li><a href="#">3</a></li>
+			<li></li>
+			<li><a href="#">4</a></li>
+			<li></li>
+		</ul>
+		<ul class="ul2">
+			<li style="position:relative;left:115px;top:-150px;"><a href="">我的购物车</a></li>
+			<li style="position:relative;left:270px;top:-150px;"><a href="">登录</a></li>
+			<li style="position:relative;left:400px;top:-150px;">寄送&amp支付方式</li>
+			<li style="position:relative;left:510px;top:-150px;">确认订单</li>
+		</ul>
+	</div>
+	<div class="content2">
+		<h4>我的购物袋</h4>
+		<div class="wu">暂无商品</div>
+		<div class="goshoping"><a href="index.html">继续购物</a></div>
+	</div>
+	<!-- <div class="content">
+		<span style="width:125px;height:10px;"></span>
+		<div><a href="#">1</a><p>我的购物车</p></div>
+		<span style="width:240px;height:10px;"></span>
+		<div><a href="#">2</a><p>登录</p></div>
+		<span style="width:240px;height:10px;"></span>
+		<div><a href="#">3</a><p>寄送&amp支付方式</p></div>
+		<span style="width:240px;height:10px;"></span>
+		<div></div>
+		<span style="width:120px;height:10px;"></span>
+		<div><h4>我的购物袋</h4></div>
+		<div class="wu">暂无商品</div>
+		<div class="goshoping"><a href="index.html">继续购物</a></div>
+	</div> -->
+	<!-- -foot部分 -->
+	<div class="foot">
+   	<span id="span1">关注KIDS KING</span><br/>
+   	<a href="#">
+   		<img src="img/focus-sina.png">
+   		<img src="img/focus-weixin.png" >
+   		<img src="img/focus-install.png" >
+   	</a>
+   	<div class="foot1">
+   		<span>下载应用程序</span><br/>
+   		<img src="img/ios_app.png" alt="">
+   	</div>
+   	<div class="foot2">
+   		<a href="#">关于我们</a>&nbsp;/&nbsp;
+		<a href="#">关于我们</a>&nbsp;/&nbsp;
+		<a href="#">关于我们</a>&nbsp;/&nbsp;
+		<a href="#">关于我们</a>
+   	</div>
+   	<span class="span2">©kids-king.cn All Rights Reserved.  深圳市洋桃儿电子商务有限公司 版权所有  备案号：<a href="#"> 粤ICP备15032610号-1  深圳市市场监督管理局企业主体身份公示</a> <img src="img/1.jpg">  <a href="#">站长统计</a></span>
+   </div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	window.onload=function(){
+		black();
+}
+function black(){
+	$(".aId").mouseover(function(){
+		$(".hear").css("display","block")
+	})
+	$(".aId").mouseout(function(){
+		$(".hear").css("display","none")
+	})
+}
+</script>
