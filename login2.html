@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>注册</title>
 	<style style="text/css">
-	body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+	body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,indengt,select,textarea,figure{
 	margin:0;
 	padding:0;
 }
@@ -117,15 +117,15 @@ input{
 			}
 		}
 		deng("#passd").onblur=function(){
-			if((pu("#passd").value)==(pu("#userpass").value)){
-				pu("#passd").nextElementSibling.innerHTML="√";
+			if((deng("#passd").value)==(deng("#userpass").value)){
+				deng("#passd").nextElementSibling.innerHTML="√";
 			}else{
-				pu("#passd").nextElementSibling.innerHTML="×";
+				deng("#passd").nextElementSibling.innerHTML="×";
 			}
 		}
 	deng("#btn").onclick=function(){
 			let xhr=new XMLHttpRequest();
-			let sender="userphone="+pu("#userphone").value+"&userpass="+ pu("#userpass").value;
+			let sender="userphone="+deng("#userphone").value+"&userpass="+ deng("#userpass").value;
 			xhr.open("get","php/zhuce.php?"+sender,true);
 			xhr.onreadystatechange=function(){
 				if(xhr.readyState==4 && xhr.status==200){
